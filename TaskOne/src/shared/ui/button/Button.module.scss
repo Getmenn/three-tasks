@@ -1,0 +1,45 @@
+.button{
+    border-radius: 3px;
+    border: 1px var(--red) solid;
+    font-weight: 700;
+    word-wrap: break-word;
+    padding: 5px;
+    line-height: 100%;
+    transition: all .3s;
+
+    &.simple{
+        background-color: var(--red);
+        color: var(--white);
+
+        &:hover, &:focus{
+            background-color: var(--red-100);
+            color: var(--white);
+        }
+    }
+
+    &.outline{
+        background-color: var(--white);
+        color: var(--red);
+
+        &:hover, &:focus{
+            background-color: var(--red);
+            color: var(--white);
+        }
+    }
+
+    &.sizeM {
+        width: 120px;
+        height: 44px;
+    } 
+    
+    &.sizeL {
+        width: 100%;
+    }
+
+    @media (min-width: 700px) {
+        &.sizeM {
+            width: 153px;
+            height: 46px;
+        }
+    }
+}

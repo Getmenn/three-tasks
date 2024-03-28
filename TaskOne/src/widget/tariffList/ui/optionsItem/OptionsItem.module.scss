@@ -1,0 +1,72 @@
+.optionsItem{
+
+    &.visible{
+        display: none;
+    }
+    
+    .marker{
+        margin-right: 9px;
+        height: 8px;
+        aspect-ratio: 1;
+    }
+
+    .cross{
+        display: none;
+    }
+
+    .optionsText, .content{
+        line-height: 20px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+
+    @media (min-width: 1020px) {
+        min-height: 70px;
+        border-bottom: 1px solid var(--blue-100);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.visible{
+            display: flex;
+            
+            .cross {
+                display: block;
+            }
+
+            .marker {
+                display: none;
+            }
+        }
+
+        &:first-child{
+            border-top: 1px solid var(--blue-100);
+        }
+
+        .marker {
+            margin: 0;
+            height: 20px;
+
+            path{
+                stroke-width: 2px;
+            }
+
+            &.contentField{
+                display: none;
+            }
+        }
+
+        .optionsText {
+            display: none;
+        }
+
+        .content {
+            width: 121px;
+            display: block;
+            text-align: center;
+        }
+    }
+}

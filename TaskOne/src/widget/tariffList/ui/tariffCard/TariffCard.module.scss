@@ -1,0 +1,175 @@
+.tariffCard{
+    padding: 30px 20px;
+    border: 1px solid var(--blue-100);
+    border-radius: 8px;
+    max-width: 610px;
+    transition: all .3s;
+
+    &:nth-child(2){
+        order: -1;
+    }
+
+    &.active{
+        background: linear-gradient(180deg, var(--blue) 0%, var(--blue-200) 100%);
+    }
+
+    .titleWrapper{
+        display: flex;
+        gap: 16px;
+
+        .sizeIcon{
+            height: 46px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: var(--blue-100);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: var(--second-family);
+
+            &.activeSize{
+                background-color: var(--white);
+            }
+        }
+
+        .title{
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+    }
+
+    .list{
+        margin-top: 30px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .priceAndButton{
+        margin-top: 39px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .priceWrapper{
+            display: flex;
+            flex-direction: column;
+            font-family: var(--second-family);
+
+            .price{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 92%;
+                font-family: inherit;
+            }
+
+            .pricePerMonth{
+                font-weight: 400;
+                line-height: 157%;
+                font-family: inherit;
+            }
+        }
+    }
+
+    @media (min-width: 700px) {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: center;
+
+        .titleWrapper {
+            .title {
+                max-width: 288px;
+            }
+        }
+
+        .list{
+            margin-top: 36px;
+        }
+
+        .priceAndButton{
+            margin-top: 0;
+            grid-row: 1/3;
+            grid-column: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 17px;
+        }
+    }
+
+    @media (min-width: 1020px) {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        min-height: 889px;
+        padding: 24px 0;
+        padding-bottom: 31px;
+        border-radius: 0;
+
+        &:first-child{
+            border-right: none;
+            border-left: none;
+        }
+
+        &:last-child {
+            border-radius: 0 8px 8px 0;
+            border-left: none;
+        }
+
+        &.active {
+            padding-top: 47px;
+            margin-block: -23px;
+            border-radius: 8px;
+        }
+
+        &:nth-child(2) {
+            order: 0;
+        }
+
+        .titleWrapper{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 204px;
+            height: 161px;
+
+            .sizeIcon {
+                background-color: unset;
+                border-radius: unset;
+                font-size: 22px;
+                line-height: 118%;
+
+                &.activeSize {
+                    background-color: unset;
+                }
+            }
+
+            .title{
+                font-size: 14px;
+                line-height: 143%;
+            }
+        }
+
+        .list{
+            width: 100%;
+            align-items: center;
+            gap: 0;
+            // margin-top: 39px;
+            margin-top: 0;
+        }
+
+        .priceAndButton{
+            gap: 6px;
+            margin-top: 33px;
+
+            .priceWrapper{
+                min-height: 45px;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.mainPage {
+    padding: 70px 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+
+    @media (min-width: 700px) {
+        gap: 43px;
+    }
+    
+
+    @media (min-width: 1020px) {
+        gap: 63px;
+
+        .tableWrapper{
+            display: flex;
+        }
+    }
+}

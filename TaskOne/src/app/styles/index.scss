@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'variable';
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+
+body {
+    min-height: 100vh;
+}
+
+*{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 143%;
+}
