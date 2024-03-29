@@ -1,0 +1,23 @@
+.imageBox{
+    border-radius: 24px;
+    width: 610px;
+    height: 610px;
+    background-color: #eff3f6;
+    display: flex;
+
+    &.center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.bottom {
+        justify-content: center;
+        align-items: end;
+    }
+}
+
+
+@keyframes wisable {
+
+
+}

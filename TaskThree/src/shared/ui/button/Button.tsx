@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 
 import s from './Button.module.scss';
@@ -10,7 +9,7 @@ export interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = memo((props: IProps) => {
     const {
-        className,
+        className = '',
         children,
         ...otherProps
     } = props;
@@ -18,10 +17,10 @@ export const Button = memo((props: IProps) => {
     return (
         <button
             type="button"
-            className={classNames(s.button, className)}
+            className={`${s.button} ${className}`}
             {...otherProps}
         >
             {children}
-        </button>
+        </button >
     );
 });
