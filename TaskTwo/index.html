@@ -6,21 +6,148 @@
     <title>Test three</title>
     <link rel="stylesheet" href="./styles/indexStyles.css" type="text/css" />
     <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/shared.css" type="text/css" />
     <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet" />
   </head>
   <body>
     <main>
       <h1 class="title">Зарегистрироваться</h1>
       <div class="wrapperBlocks">
-        <div class="block">
-          <img src="./assets/images/secondForm.png" alt="first form" />
-          <button class="button">Форма 1</button>
+        <div class="block firstBlock">
+          <img src="./assets/images/firstForm.png" alt="first form" />
+          <button class="button buttonOne">Форма 1</button>
         </div>
         <div class="block">
           <img src="./assets/images/secondForm.png" alt="second form" />
-          <button class="button">Форма 2</button>
+          <button class="button buttonTwo">Форма 2</button>
         </div>
       </div>
+      <form class="formOne">
+        <button class="exitBtn">
+          <img src="./assets/svg/cross.svg" class="exitSvg" alt="exit">
+        </button>
+
+        <img src="./assets/images/firstForm.png" class="imageFormOne" alt="first form">
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field emailNumber"
+            name="emailNumber"
+            placeholder="Email или телефон"
+          >
+          <span class="erorrMessage emailNumber"></span>
+        </div>
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field city"
+            name="city"
+            placeholder="Город"
+          >
+          <span class="erorrMessage city"></span>
+        </div>
+
+        <label class="checkboxContainer">
+          Я хочу получить рассылку после мероприятия
+          <input type="checkbox" class="myCheckbox">
+          <span class="checkmark">
+            <img src="./assets/svg/check.svg" class="checkIcon" alt="check">
+          </span>
+        </label>
+
+        <button class="button formButton" type="submit">Зарегистрироваться</button>
+
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor 
+          incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo.
+        </p>
+      </form>
+      <form class="formTwo">
+        <button class="exitBtn">
+          <img src="./assets/svg/cross.svg" class="exitSvg" alt="exit">
+        </button>
+
+        <img src="./assets/images/secondForm.png" class="imageFormTwo" alt="second form">
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field name"
+            name="name"
+            placeholder="Имя"
+          >
+          <span class="erorrMessage name"></span>
+        </div>
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field surname"
+            name="surname"
+            placeholder="Фамилия"
+          >
+          <span class="erorrMessage surname"></span>
+        </div>
+        
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field number"
+            name="number"
+            placeholder="Телефон"
+          >
+          <span class="erorrMessage number"></span>
+        </div>
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field email"
+            name="email"
+            placeholder="Email"
+          >
+          <span class="erorrMessage email"></span>
+        </div>
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field nameCompany"
+            name="nameCompany"
+            placeholder="Название компании"
+          >
+          <span class="erorrMessage nameCompany"></span>
+        </div>
+
+        <div class="fieldWrapper">
+          <input 
+            type="text" 
+            class="field region"
+            name="region"
+            placeholder="Регион"
+          >
+          <span class="erorrMessage region"></span>
+        </div>
+
+        <label class="checkboxContainer">
+          Я хочу получить рассылку после мероприятия
+          <input type="checkbox" class="myCheckbox">
+          <span class="checkmark">
+            <img src="./assets/svg/check.svg" class="checkIcon" alt="check">
+          </span>
+        </label>
+
+        <button class="button formButton" type="submit">Зарегистрироваться</button>
+
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor 
+          incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo.
+        </p>
+      </form>
     </main>
     <script type="text/javascript" src="script.js"></script>
   </body>

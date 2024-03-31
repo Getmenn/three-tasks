@@ -1,0 +1,123 @@
+/* Заголовок */
+.title{
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 112%;
+    text-align: center;
+    color: var(--black);
+}
+
+/* Кнопка */
+.button{
+    border-radius: 3px;
+    padding: 12px 20px;
+    min-width: 170px;
+    max-width: fit-content;
+    height: 46px;
+    background-color: var(--blue-100);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--white);
+    transition: all .3s;
+}
+
+.button.formButton{
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.button:hover{
+    background-color: var(--blue);
+}
+
+/* Инпут */
+.fieldWrapper{
+    position: relative;
+}
+
+.field{
+    width: 100%;
+    max-width: 368px;
+    height: 48px;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 112%;
+    padding-left: 16px;
+}
+
+.fieldWrapper:not(:first-of-type){
+    margin-top: 15px;
+}
+
+.erorrMessage{
+    position: absolute;
+    color: var(--red);
+    line-height: 0;
+    font-size: 12px;
+    bottom: -7px;
+    left: 0;
+}
+
+/* Кнопка выхода с формы */
+.exitBtn{
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    background-color: transparent;
+    width: fit-content;
+}
+
+.exitSvg{
+    aspect-ratio: 1;
+    width: 13px;
+    cursor: pointer;
+}
+
+
+/* Параграф */
+.paragraph{
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--gray-100);
+    margin-top: 16px;
+}
+
+/* Чекбокс */
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 38px;
+}
+
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--blue-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkmark .checkIcon {
+    display: none;
+}
+
+.checkmark.checked .checkIcon {
+    display: block;
+}

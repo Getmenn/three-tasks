@@ -2,9 +2,13 @@ html {
     --second-family: 'Proxima Nova Condensed', sans-serif;
 
     --white: #fff;
+    --gray: #e5e5e5;
+    --red: #ff6a6a;
+    --gray-100: #999;;
     --black: #000;
     --blue: #0070c1;
     --blue-100: #2998ff;
+    --blue-200: #0f8fee;
 
     --box-shadow-one: 0 3px 19px 0 rgba(51, 51, 51, 0.04), 0 4px 18px 0 rgba(0, 0, 0, 0.09);;
     --box-shadow-two: 0 16px 80px 0 rgba(0, 0, 0, 0.04), 0 0 12px 0 rgba(46, 45, 61, 0.18);

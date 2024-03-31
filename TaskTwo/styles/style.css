@@ -6,15 +6,6 @@ main{
     align-items: center;
 }
 
-.title{
-    font-family: var(--second-family);
-    font-weight: 900;
-    font-size: 34px;
-    line-height: 112%;
-    text-align: center;
-    color: var(--black);
-}
-
 .wrapperBlocks{
     display: flex;
     justify-content: center;
@@ -22,6 +13,11 @@ main{
     margin-top: 63px;
 }
 
+.hidden{
+    display: none;
+}
+
+/* блоки на главной странице */
 .block{
     border-radius: 3px;
     width: 100%;
@@ -36,20 +32,57 @@ main{
     padding: 20px 50px 36px;
 }
 
-button{
-    border-radius: 3px;
-    padding: 12px 25px;
-    width: 170px;
-    height: 46px;
-    background-color: var(--blue-100);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 140%;
-    color: var(--white);
-    transition: all .3s;
+.firstBlock{
+    gap: 0;
+    padding-top: 0;
 }
 
-button:hover{
-    background-color: var(--blue);
+.firstBlock .buttonOne{
+    margin-block: -6px;
+
 }
+
+/* Стили для форм */
+.formOne, .formTwo{
+    box-shadow: var(--box-shadow-two);
+    width: 100%;
+    max-width: 670px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.formOne.visible, .formTwo.visible {
+    display: flex;
+}
+
+/* Первая форма */
+.formOne{
+    padding: 34px 29px 37px 37px;
+}
+
+.formOne .imageFormOne{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 203px;
+    height: 191px;  
+}
+
+/* Вторая форма */
+.formTwo{
+    padding: 33px 27px 40px 37px;
+}
+
+.formTwo .imageFormTwo{
+    position: absolute;
+    top: 9px;
+    right: 25px;
+    width: 188px;
+    height: 166px;  
+}
+
+
+
 
