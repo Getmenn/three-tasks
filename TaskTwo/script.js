@@ -41,7 +41,8 @@ secondCheckBox.addEventListener('change', () => handleCheckBox(myCheckboxTwo, ch
 
 
 // Выход из формы
-const exitBtn = document.querySelector('.exitBtn')
+const exitBtnFirst = document.querySelector('.exitBtn.first')
+const exitBtnSecond = document.querySelector('.exitBtn.second')
 
 const handleExit = () => {
     formOne.classList.remove('visible');
@@ -49,8 +50,8 @@ const handleExit = () => {
     main.classList.remove('hidden');
 }
 
-exitBtn.addEventListener('click', handleExit);
-
+exitBtnFirst.addEventListener('click', handleExit);
+exitBtnSecond.addEventListener('click', handleExit);
 
 // Валидация
 

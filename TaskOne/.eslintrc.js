@@ -68,8 +68,8 @@ module.exports = {
     },
     globals: {
         __IS_DEV__: true,
-        __API__: true,
-        __WS__: true,
+        __API__: false,
+        __WS__: false,
         __PROJECT__: true,
     },
 };

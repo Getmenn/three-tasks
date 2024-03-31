@@ -52,12 +52,12 @@
     margin-top: 15px;
 }
 
+/* Сообщение об ошибке */
 .erorrMessage{
     position: absolute;
     color: var(--red);
-    line-height: 0;
     font-size: 12px;
-    bottom: -7px;
+    bottom: -13px;
     left: 0;
 }
 
@@ -94,6 +94,7 @@
     cursor: pointer;
     font-size: 16px;
     margin-top: 38px;
+    width: fit-content;
 }
 
 .checkboxContainer input {

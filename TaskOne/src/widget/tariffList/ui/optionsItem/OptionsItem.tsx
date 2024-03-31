@@ -3,8 +3,8 @@ import { memo } from 'react';
 
 import CrossSvg from '@/shared/assets/svg/cross.svg';
 import MarkerSvg from '@/shared/assets/svg/marker.svg';
+import { getOptionsText } from '@/shared/utils/getOptionstText';
 
-import { getOptionsText } from '../../../../shared/utils/getOptionstText';
 import { LiTypes } from '../../mock/mock';
 import s from './OptionsItem.module.scss';
 

@@ -8,7 +8,6 @@ interface ITaskImages {
     id: number,
     position: 'center' | 'bottom';
     image: ReactElement<ImgHTMLAttributes<HTMLImageElement>>;
-
 }
 
 export const taskImages: ITaskImages[] = [
