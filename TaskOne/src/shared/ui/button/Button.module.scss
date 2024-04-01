@@ -11,7 +11,7 @@
         background-color: var(--red);
         color: var(--white);
 
-        &:hover, &:focus{
+        &:hover, &:focus, &:active{
             background-color: var(--red-100);
             color: var(--white);
         }
@@ -21,7 +21,7 @@
         background-color: var(--white);
         color: var(--red);
 
-        &:hover, &:focus{
+        &:hover, &:focus, &:active{
             background-color: var(--red);
             color: var(--white);
         }
