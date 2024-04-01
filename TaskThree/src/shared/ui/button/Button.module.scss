@@ -10,7 +10,7 @@
     text-align: center;
     color: var(--white);
 
-    &:hover, &:focus{
+    &:hover, &:focus, &:active{
         background-color: var(--blue-100);
     }
 }
